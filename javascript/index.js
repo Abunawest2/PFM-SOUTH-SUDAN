@@ -15,7 +15,7 @@ function displayMenu(){
 }
 
 const banner = document.querySelector('.banner');
-const images = ['../images/banner.jpg', '../images/blacklogo.jpg', '../images/The-Unity.jpg']; // List of image URLs
+const images = ['./images/banner.jpg', './images/blacklogo.jpg', './images/The-Unity.jpg']; // List of image URLs
 const colors = ['black', 'rgb(255, 215, 215)', 'rgb(255, 40, 40)']
 let currentIndex = 0;
 
