@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8fd9d5d623.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-2rkoY4qZFyn+1KrBsMzGhW+M6P+nQe/eHZV5d9qBC9iC3Rl2bu8fBt3B1BvsiT2+" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- <link rel="stylesheet" href="/styles/new-style.css"> -->
+</head>
+<style>
+
+    /* Styling for the menu bar icon */
+
+</style>
+<body>
+    
+    <header class="banner">
+        <h1>The People's Freedom Movement</h1>
+    </header>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#banner"><img id="logo" src="/images/whitelogo.jpg" alt=""></a></li>
+            <li class="menu-list"><a class="menu-links" href="#home">Home</a></li>
+            <li class="menu-list"><a class="menu-links" href="#about">About Us</a></li>
+            <li class="menu-list"><a class="menu-links" href="#leadership">Leadership</a></li>
+            <li class="menu-list"><a class="menu-links" href="#issues">Issues</a></li>
+            <li class="menu-list"><a class="menu-links" href="#events">Events</a></li>
+            <li class="menu-list"><a class="menu-links" href="#get-involved">Get Involved</a></li>
+            <li class="menu-list"><a class="menu-links" href="#news">News</a></li>
+            <li class="menu-list"><a class="menu-links" href="#contact">Contact</a></li>
+            <li id="menu-line"><i class="fas fa-bars" onclick="displayMenu()"></i></li>
+        </ul>
+    </nav>
+    <div id="hidden-screen" class="small-screen-menu">
+        <ul>
+            <li><a class="drop-down-screen-links" href="#home">Home</a></li>
+            <li><a class="drop-down-screen-links" href="#about">About Us</a></li>
+            <li><a class="drop-down-screen-links" href="#documents">Documents</a></li>
+            <li><a class="drop-down-screen-links" href="#newsletter">Newsletter</a></li>
+            <li><a class="drop-down-screen-links" href="#leadership">Leadership</a></li>
+            <li><a class="drop-down-screen-links" href="#issues">Issues</a></li>
+            <li><a class="drop-down-screen-links" href="#events">Events</a></li>
+            <li><a class="drop-down-screen-links" href="#get-involved">Get Involved</a></li>
+            <li><a class="drop-down-screen-links" href="#news">News</a></li>
+            <li><a class="drop-down-screen-links" href="#contact">Contact</a></li>
+        </ul>
+        <i onclick='closeMenu()' id="mbar" class="fas fa-times"></i>
+    </div>
+    <main>
+        <section id="home" class="section-home">
+            <h2>Welcome to the People's Movement for Change</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/home.jpg" alt="Home Image" class="section-image">
+        </section>
+        
+        <section id="about" class="section-about">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/about.jpg" alt="About Image" class="section-image">
+        </section>
+        
+        <section id="leadership" class="section-leadership">
+            <h2>Our Leadership</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/leadership.jpg" alt="Leadership Image" class="section-image">
+        </section>
+        
+        <section id="issues" class="section-issues">
+            <h2>Our Stance on Issues</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/issues.jpg" alt="Issues Image" class="section-image">
+        </section>
+        
+        <section id="events" class="section-events">
+            <h2>Upcoming Events</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/events.jpg" alt="Events Image" class="section-image">
+        </section>
+        
+        <section id="get-involved" class="section-get-involved">
+            <h2>Get Involved</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/get-involved.jpg" alt="Get Involved Image" class="section-image">
+        </section>
+        
+        <section id="news" class="section-news">
+            <h2>Latest News</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+            <img src="/images/news.jpg" alt="News Image" class="section-image">
+        </section>
+        
+        <section id="contact" class="login-form">
+            <h2>Contact Us</h2>
+
+            <form id="contact-form" action="#" method="POST">
+                <label for="name">Name:</label>
+                <input class="input" type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input class="input" type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea class="input" id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 PMF change. All rights reserved.</p>
+        </div>
+        <div id="social-media" class="social-media-links">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/javascript/index.js"></script>
+</body>
+</html>
