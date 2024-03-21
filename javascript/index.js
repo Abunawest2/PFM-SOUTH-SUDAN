@@ -15,7 +15,7 @@ function displayMenu(){
 }
 
 const banner = document.querySelector('.banner');
-const images = ['./banner.jpg', './blacklogo.jpg', './The-Unity.jpg']; // List of image URLs
+const images = ['../banner.jpg', '../blacklogo.jpg', '../The-Unity.jpg']; // List of image URLs
 const colors = ['black', 'rgb(255, 215, 215)', 'rgb(255, 40, 40)']
 let currentIndex = 0;
 
@@ -30,4 +30,4 @@ function changeBackgroundImage() {
 // Initial call to set the first image
 changeBackgroundImage()
 // Change the background image every 10 seconds
-setInterval(changeBackgroundImage, 10000);// 20 seconds in milliseconds
+setInterval(changeBackgroundImage, 5000);// 20 seconds in milliseconds
