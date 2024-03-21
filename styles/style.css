@@ -249,7 +249,7 @@ section {
 } */
 
 .login-form {
-    background-image: url(/images/contact-Us.jpeg);
+    background-image: url(../images/contact-Us.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
