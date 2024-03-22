@@ -21,7 +21,7 @@ let currentIndex = 0;
 
 function changeBackgroundImage() {
     banner.style.color = `${colors[currentIndex]}`;
-    banner.style.backgroundImage = `linear-gradient(to top, rgba(255, 0, 75, 0.1), rgba(255, 0, 75, 0.7)), url(${images[currentIndex]})`;
+    banner.style.backgroundImage = `linear-gradient(to top, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.7)), url(${images[currentIndex]})`;
     currentIndex = (currentIndex + 1) % colors.length;
     currentIndex = (currentIndex + 1) % images.length;
     

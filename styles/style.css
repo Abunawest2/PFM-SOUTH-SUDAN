@@ -13,6 +13,7 @@ body {
 }
 
 .banner {
+    background-image:  linear-gradient(to top, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.8));
     font-family: "Rubik Wet Paint", system-ui;
     font-weight: bold;
     font-style: normal;
