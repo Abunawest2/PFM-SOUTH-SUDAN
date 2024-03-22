@@ -140,65 +140,12 @@ a {
     color: yellow;
 }
 
-footer {
-    color: azure;
-    background-image: linear-gradient(rgba(50, 50, 50, 1), rgba(0, 0, 0, 1));
-    padding: 20px 10px;
-    background-color: gainsboro;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer div ul {
-    margin-right: 0;
-    flex: 1;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer div ul li {
-    margin: 0 5px 0 20px;
-}
-
 /* .logo {
     color: white;
     width: 25px;
 } */
 
-@media screen and (max-width: 800px) {
-    footer {
-        color: white;
-        background-color: rgb(0, 0, 0);
-    }
 
-    footer div ul {
-        margin-right: 0;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav {
-        width: 100%;
-        box-shadow: 2px 5px 20px;
-    }
-
-    .menu-list {
-        display: none;
-    }
-
-    #menu-line {
-        display: block;
-        cursor: pointer;
-    }
-}
 
 /* Main Content Styles */
 /* main {
@@ -588,4 +535,66 @@ section{
 
 .btn:hover {
     background-color: #555;
+}
+
+
+/* Small-Screen Functionalities */
+
+@media screen and (max-width: 800px) {
+    footer {
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+
+    footer div ul {
+        margin-right: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        width: 100%;
+        box-shadow: 2px 5px 20px;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    #menu-line {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Footer */
+
+footer {
+    color: azure;
+    background-image: linear-gradient(rgba(50, 50, 50, 1), rgba(0, 0, 0, 1));
+    padding: 20px 10px;
+    background-color: gainsboro;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div ul {
+    margin-right: 0;
+    flex: 1;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div ul li {
+    margin: 0 5px 0 20px;
 }
