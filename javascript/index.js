@@ -10,7 +10,7 @@ let index = 0
 
 function displayMenu() {
     if (hiddenMenu.style.display === 'none') {
-        hiddenMenu.style.display = 'block';
+        hiddenMenu.style.display = 'flex';
         document.body.classList.add('no-scroll');
         banner.style.display = 'none'
         document.getElementById('menu-icon').classList.replace('fa-bars', 'fa-times');

@@ -85,7 +85,6 @@ a {
 }
 
 .small-screen-menu {
-    /* padding-top: 20px; */
     position: fixed;
     top: 84;
     z-index: 1;
@@ -99,6 +98,7 @@ a {
     height: 100vh;
     display: none;
     overflow: auto;
+    justify-content: center;
     
 }
 
@@ -111,8 +111,6 @@ a {
 
 .small-screen-menu ul {
     list-style: none;
-    align-self: flex-start;
-    margin-left: 20px;
 }
 
 .no-scroll {
@@ -122,8 +120,10 @@ a {
 
 .small-screen-menu ul li {
     text-align: left;
-    padding: 5px 30px;
-    margin-top: 20px;
+    padding: 15px 0;
+    /* padding: 5px 0 5px 50px;
+    margin: 20px auto; */
+    /* margin: auto; */
 }
 
 .drop-down-screen-links {
