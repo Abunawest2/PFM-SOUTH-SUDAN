@@ -8,18 +8,23 @@ const images = ['../images/banner.jpg', '../images/blacklogo.jpg', '../images/Th
 let currentIndex = 0;
 let index = 0
 
-function closeMenu(){
-    if (hiddenMenu.style.display='flex') {
-        hiddenMenu.style.display='none'
+function displayMenu() {
+    if (hiddenMenu.style.display === 'none') {
+        hiddenMenu.style.display = 'block';
+        document.body.classList.add('no-scroll');
+        banner.style.display = 'none'
+        document.getElementById('menu-icon').classList.replace('fa-bars', 'fa-times');
+    } else {
+        hiddenMenu.style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        banner.style.display = 'flex'
+        document.getElementById('menu-icon').classList.replace('fa-times', 'fa-bars');
     }
 }
 
-function displayMenu(){
-    if (hiddenMenu.style.display='none') {
-        hiddenMenu.style.display='flex'
-    }
-}
-
+document.querySelectorAll('.drop-down-screen-links').forEach(link => {
+    link.addEventListener('click', displayMenu);
+});
 
 function changeBackgroundImage() {
     sectionHome.style.backgroundImage = backgroundColors[index];
@@ -33,7 +38,6 @@ function changeColors() {
     sectionHome.style.color = `${colors[index]}`;
 }
 
-// Initial call to set the first image
 changeBackgroundImage()
 // Change the background image every 10 seconds
 setInterval(changeBackgroundImage, 10000);// 20 seconds in milliseconds

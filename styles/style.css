@@ -85,9 +85,9 @@ a {
 }
 
 .small-screen-menu {
-    padding-top: 20px;
+    /* padding-top: 20px; */
     position: fixed;
-    top: 0;
+    top: 84;
     z-index: 1;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     background-repeat: no-repeat;
@@ -95,12 +95,9 @@ a {
     background-position: center;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
-    /* border-radius: 0 0 20px 20px; */
-    width: 100%;
+    width: 40%;
     height: 100vh;
     display: none;
-    justify-content: space-between;
-    overflow-y: auto;
     
 }
 
@@ -117,14 +114,10 @@ a {
     margin-left: 20px;
 }
 
-#mbar {
-    width: 40px;
-    margin: 20px;
-    align-self: flex-start;
-    cursor: pointer;
-    font-size: 30px;
-    color: azure;
+.no-scroll {
+    overflow: hidden;
 }
+
 
 .small-screen-menu ul li {
     text-align: left;
