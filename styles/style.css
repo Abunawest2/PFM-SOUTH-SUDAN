@@ -299,27 +299,29 @@ section {
     background-color: rgb(12, 0, 170);
 }
 
+main{
+    padding: 30px;
+}
 
 .section-home {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 50px;
 }
 
-.hero-content {
+/* .hero-content {
     max-width: 800px;
     margin: 0 auto;
-}
+} */
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
 }
 
