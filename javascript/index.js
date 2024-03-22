@@ -36,7 +36,7 @@ function changeColors() {
 // Initial call to set the first image
 changeBackgroundImage()
 // Change the background image every 10 seconds
-setInterval(changeBackgroundImage, 1000);// 20 seconds in milliseconds
+setInterval(changeBackgroundImage, 10000);// 20 seconds in milliseconds
 
 changeColors()
 // Change the background image every 10 seconds
