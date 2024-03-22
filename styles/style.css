@@ -275,6 +275,7 @@ section {
 }
 
 .cta-button {
+    font-size: 3vh;
     display: inline-block;
     background-color: #007bff;
     color: white;
@@ -290,6 +291,13 @@ section {
 }
 
 
+.get-involved {
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
 .section-get-involved h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -303,15 +311,18 @@ section {
 }
 
 .action-buttons {
+    max-width: 60%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    align-self: center;
+    margin: auto;
 }
 section{
     margin: 20px auto;
     background-color: #e6e6e6;
-    padding: 40px 20px;
+    padding: 30px 15px;
     width: auto;
     border-radius: 10px;
 }
@@ -360,14 +371,14 @@ section{
 .leadership-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .leader-card {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px 10px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
