@@ -30,7 +30,7 @@ function changeBackgroundImage() {
 // Initial call to set the first image
 changeBackgroundImage()
 // Change the background image every 10 seconds
-setInterval(changeBackgroundImage, 5000);// 20 seconds in milliseconds
+setInterval(changeBackgroundImage, 10000);// 20 seconds in milliseconds
 
 const backgroundColors = ['linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5))', 'linear-gradient(rgba(0, 255, 115, 0.5), rgba(0, 255, 115, 0.5))', 'linear-gradient(rgba(50, 0, 50, 0.5), rgba(50, 0, 50, 0.5))', 'linear-gradient(rgba(255, 230, 50, 0.6), rgba(255, 230, 50, 0.6))']
 const sectionHome = document.querySelector('.section-home');
