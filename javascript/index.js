@@ -21,7 +21,7 @@ let currentIndex = 0;
 
 function changeBackgroundImage() {
     banner.style.color = `${colors[currentIndex]}`;
-    banner.style.backgroundImage = `linear-gradient(to top, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.7)), url(${images[currentIndex]})`;
+    banner.style.backgroundImage = `linear-gradient(to top, rgba(255, 0, 50, 0.1), rgba(255, 0, 50, 0.7)), url(${images[currentIndex]})`;
     currentIndex = (currentIndex + 1) % colors.length;
     currentIndex = (currentIndex + 1) % images.length;
     
@@ -32,7 +32,7 @@ changeBackgroundImage()
 // Change the background image every 10 seconds
 setInterval(changeBackgroundImage, 5000);// 20 seconds in milliseconds
 
-const backgroundColors = ['linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5))', 'linear-gradient(rgba(0, 255, 115, 0.5), rgba(0, 255, 115, 0.5))', 'linear-gradient(rgba(50, 0, 255, 0.5), rgba(50, 0, 255, 0.5))', 'linear-gradient(rgba(255, 230, 90, 0.6), rgba(255, 230, 90, 0.6))']
+const backgroundColors = ['linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5))', 'linear-gradient(rgba(0, 255, 115, 0.5), rgba(0, 255, 115, 0.5))', 'linear-gradient(rgba(50, 0, 50, 0.5), rgba(50, 0, 50, 0.5))', 'linear-gradient(rgba(255, 230, 50, 0.6), rgba(255, 230, 50, 0.6))']
 const sectionHome = document.querySelector('.section-home');
 
 
