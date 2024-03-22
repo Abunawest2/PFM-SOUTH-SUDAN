@@ -7,23 +7,22 @@
     <script src="https://kit.fontawesome.com/8fd9d5d623.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-2rkoY4qZFyn+1KrBsMzGhW+M6P+nQe/eHZV5d9qBC9iC3Rl2bu8fBt3B1BvsiT2+" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Numans&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/styles/new-style.css"> -->
+
 </head>
-<style>
-
-    /* Styling for the menu bar icon */
-
-</style>
 <body>
     
     <header class="banner">
         <h1>The People's Freedom Movement</h1>
     </header>
     <nav class="nav-bar">
-        <ul>
+        <ul id="big-screen">
             <li><a href="#banner"><img id="logo" src="./whitelogo.jpg" alt=""></a></li>
             <li class="menu-list"><a class="menu-links" href="#home">Home</a></li>
-            <li class="menu-list"><a class="menu-links" href="#about">About Us</a></li>
+            <li class="menu-list"><a class="menu-links" href="#about">About</a></li>
             <li class="menu-list"><a class="menu-links" href="#leadership">Leadership</a></li>
             <li class="menu-list"><a class="menu-links" href="#issues">Issues</a></li>
             <li class="menu-list"><a class="menu-links" href="#events">Events</a></li>
@@ -35,61 +34,178 @@
     </nav>
     <div id="hidden-screen" class="small-screen-menu">
         <ul>
-            <li><a class="drop-down-screen-links" href="#home">Home</a></li>
-            <li><a class="drop-down-screen-links" href="#about">About</a></li>
-            <li><a class="drop-down-screen-links" href="#documents">Documents</a></li>
-            <li><a class="drop-down-screen-links" href="#newsletter">Newsletter</a></li>
-            <li><a class="drop-down-screen-links" href="#leadership">Leadership</a></li>
-            <li><a class="drop-down-screen-links" href="#issues">Issues</a></li>
-            <li><a class="drop-down-screen-links" href="#events">Events</a></li>
-            <li><a class="drop-down-screen-links" href="#get-involved">Get Involved</a></li>
-            <li><a class="drop-down-screen-links" href="#news">News</a></li>
-            <li><a class="drop-down-screen-links" href="#contact">Contact</a></li>
+            <li><a class="drop-down-screen-links" href="#home"><i class="fas fa-house"></i> Home</a></li>
+            <li><a class="drop-down-screen-links" href="#about"><i class="fa-regular fa-address-card"></i></i>  About</a></li>
+            <li><a class="drop-down-screen-links" href="#documents"><i class="fa-solid fa-folder-open"></i>  Documents</a></li>
+            <li><a class="drop-down-screen-links" href="#newsletter"><i class="fa-regular fa-envelope-open"></i>  Newsletter</a></li>
+            <li><a class="drop-down-screen-links" href="#leadership"><i class="fas fa-users"></i>  Leadership</a></li>
+            <li><a class="drop-down-screen-links" href="#issues"><i class="fas fa-exclamation-circle"></i>  Issues</a></li>
+            <li><a class="drop-down-screen-links" href="#events"><i class="fa-regular fa-calendar"></i></i>  Events</a></li>
+            <li><a class="drop-down-screen-links" href="#get-involved"><i class="fas fa-handshake"></i>  Get Involved</a></li>
+            <li><a class="drop-down-screen-links" href="#news"><i class="fas fa-newspaper"></i>  News</a></li>
+            <li><a class="drop-down-screen-links" href="#contact"><i class="fa-regular fa-id-badge"></i>  Contact</a></li>
         </ul>
+        
         <i onclick='closeMenu()' id="mbar" class="fas fa-times"></i>
     </div>
     <main>
         <section id="home" class="section-home">
-            <h2>Welcome to the People's Movement for Change</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/home.jpg" alt="Home Image" class="section-image">
+            <div class="hero-content">
+                <h1>Welcome to the People's Movement for Change</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+                <a href="#get-involved" class="cta-button">Get Involved</a>
+            </div>
         </section>
+        
         
         <section id="about" class="section-about">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/about.jpg" alt="About Image" class="section-image">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
+                        <p>Nullam nec elit velit. Sed quis malesuada mauris, id varius justo. Nunc euismod eros ut metus laoreet, quis venenatis elit eleifend. Nulla facilisi.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/images/about-us.jpg" alt="About Us Image">
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
         <section id="leadership" class="section-leadership">
-            <h2>Our Leadership</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/leadership.jpg" alt="Leadership Image" class="section-image">
+            <div class="container">
+                <h2>Our Leadership</h2>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="../images/profile-Icon.png" alt="Leader 1">
+                        </div>
+                        <div class="leader-details">
+                            <h3>Comedian Feel Free</h3>
+                            <p>Founder & ChairMan</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="../images/profile-Icon.png" alt="Leader 2">
+                        </div>
+                        <div class="leader-details">
+                            <h3>Jane Smith</h3>
+                            <p>COO</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                        </div>
+                    </div>
+                    <div class="leader-card">
+                        <div class="leader-image">
+                            <img src="../images/profile-Icon.png" alt="Leader 3">
+                        </div>
+                        <div class="leader-details">
+                            <h3>Michael Johnson</h3>
+                            <p>CFO</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
         <section id="issues" class="section-issues">
-            <h2>Our Stance on Issues</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/issues.jpg" alt="Issues Image" class="section-image">
+            <div class="container">
+                <h2>Our Stance on Issues</h2>
+                <div class="issue-list">
+                    <div class="issue">
+                        <h3>Issue Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                    </div>
+                    <div class="issue">
+                        <h3>Issue Title 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                    </div>
+                    <div class="issue">
+                        <h3>Issue Title 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
         <section id="events" class="section-events">
-            <h2>Upcoming Events</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/events.jpg" alt="Events Image" class="section-image">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="event-list">
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">APR</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Event Title 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo.</p>
+                            <p><strong>Location:</strong> Event Location 1</p>
+                            <p><strong>Date:</strong> April 15, 2024</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">APR</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Event Title 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo.</p>
+                            <p><strong>Location:</strong> Event Location 2</p>
+                            <p><strong>Date:</strong> April 22, 2024</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
         <section id="get-involved" class="section-get-involved">
-            <h2>Get Involved</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/get-involved.jpg" alt="Get Involved Image" class="section-image">
+            <div class="container">
+                <h2>Get Involved</h2>
+                <p>Join us in making a difference. Whether you're passionate about social change, community development, or political reform, there's a place for you in the People's Freedom Movement for Change.</p>
+                <div class="action-buttons">
+                    <a href="#membership" class="cta-button">Become a Member</a>
+                    <a href="#volunteer" class="cta-button">Volunteer</a>
+                    <a href="#donate" class="cta-button">Donate</a>
+                </div>
+            </div>
         </section>
         
+        
         <section id="news" class="section-news">
-            <h2>Latest News</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio. Mauris pharetra consequat justo id dapibus.</p>
-            <img src="/images/news.jpg" alt="News Image" class="section-image">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <img src="../images/fallen-soldier.jpg" alt="News Image" class="news-image">
+                        <div class="news-details">
+                            <h3>✊FREEDOM to the PEOPLE✊</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="../images/suffering.jpg" alt="News Image" class="news-image">
+                        <div class="news-details">
+                            <h3>WAKE UP, SOUTH SUDAN: A Call for Change</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget consequat justo. Integer rhoncus pretium velit, non tristique odio.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
         
         <section id="contact" class="login-form">
             <h2>Contact Us</h2>
@@ -112,7 +228,7 @@
     </main>
     <footer>
         <div class="copyright">
-            <p>&copy; 2024 PMF change. All rights reserved.</p>
+            <p>&copy; 2024 PFM for change. All rights reserved.</p>
         </div>
         <div id="social-media" class="social-media-links">
             <ul>
