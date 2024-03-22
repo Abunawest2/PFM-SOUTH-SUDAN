@@ -22,12 +22,19 @@ function displayMenu() {
     }
 }
 
-// function removeHiddenScreen(){
-//     if (hiddenMenu.style.display === 'none') {
-//         hiddenMenu.style.display = 'none'
-//     }
-// }
-// window.addEventListener('click', removeHiddenScreen)
+document.addEventListener('click', function(event) {
+    const targetElement = event.target; // clicked element
+
+    if (!targetElement.closest('#hidden-screen') && !targetElement.closest('#menu-icon')) {
+        // Close the menu if the click is outside of hidden-screen and menu-icon
+        hiddenMenu.style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        banner.style.display = 'flex';
+        document.getElementById('menu-icon').classList.replace('fa-times', 'fa-bars');
+    }
+});
+
+
 
 document.querySelectorAll('.drop-down-screen-links').forEach(link => {
     link.addEventListener('click', displayMenu);
@@ -41,8 +48,8 @@ function changeBackgroundImage() {
 }
 
 function changeColors() {
-    banner.style.color = `${colors[currentIndex]}`;
-    sectionHome.style.color = `${colors[index]}`;
+    banner.style.color = `black`;
+    sectionHome.style.color = `black`;
 }
 
 changeBackgroundImage()
