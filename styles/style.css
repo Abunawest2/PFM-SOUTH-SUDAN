@@ -98,7 +98,7 @@ a {
     width: 60%;
     height: 100vh;
     display: none;
-    overflow: scroll;
+    overflow: auto;
     
 }
 
