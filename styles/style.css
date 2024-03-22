@@ -271,7 +271,8 @@ section{
 }
 
 .cta-button {
-    font-size: 3vh;
+    text-align: center;
+    font-size: 1rem;
     display: inline-block;
     background-color: #007bff;
     color: white;
@@ -289,7 +290,7 @@ section{
 
 .get-involved {
     background-color: #fff;
-    padding: 20px 10px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -309,7 +310,6 @@ section{
 .action-buttons {
     max-width: 60%;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     gap: 10px;
     align-self: center;
@@ -321,6 +321,7 @@ section{
     padding: 40px;
     width: auto;
     border-radius: 10px;
+    text-align: center;
 }
 
 .section-about h2 {
@@ -592,10 +593,7 @@ section{
 
     section{
         margin: 30px auto;
-        background-color: #e6e6e6;
         padding: 20px 15px;
-        width: auto;
-        border-radius: 10px;
     }
 }
 

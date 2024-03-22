@@ -22,6 +22,13 @@ function displayMenu() {
     }
 }
 
+// function removeHiddenScreen(){
+//     if (hiddenMenu.style.display === 'none') {
+//         hiddenMenu.style.display = 'none'
+//     }
+// }
+// window.addEventListener('click', removeHiddenScreen)
+
 document.querySelectorAll('.drop-down-screen-links').forEach(link => {
     link.addEventListener('click', displayMenu);
 });
