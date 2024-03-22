@@ -12,6 +12,9 @@ body {
     color: black;
 }
 
+a > span{
+    margin-left: 30px;
+}
 .banner {
     background-image:  linear-gradient(to top, rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0.8));
     font-family: "Rubik Wet Paint", system-ui;
@@ -426,9 +429,9 @@ section{
 }
 
 .event {
+    margin: auto;
     flex: 1 1 30%;
-    text-align: left;
-    padding: 1%;
+    padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -449,6 +452,10 @@ section{
 
 .event-date .month {
     font-size: 1rem;
+}
+
+.event-details{
+    padding: 20px;
 }
 
 .event-details h3 {
