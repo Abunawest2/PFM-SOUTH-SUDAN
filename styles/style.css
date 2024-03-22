@@ -308,9 +308,9 @@ section {
     gap: 20px;
 }
 section{
-    margin: 30px auto;
+    margin: 20px auto;
     background-color: #e6e6e6;
-    padding: 40px;
+    padding: 40px 20px;
     width: auto;
     border-radius: 10px;
 }
